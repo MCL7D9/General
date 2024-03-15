@@ -12,7 +12,7 @@ inline int rando(bool except[9]={1},int upLim=9){
 	if (except[rann]==0){
 		rando(except,upLim);
 	}
-		return rann;
+	return rann;
 }
 
 class sudoku{
@@ -48,7 +48,8 @@ class sudoku{
                }
           }
           for (int i=0;i<20;i++){
-               sudo[rando()][rando()]=0;
+              int xx=rando(),yy=rando();
+               sudo[xx][yy]=0;
           }
           print("Puzzle Generated")
      }
@@ -64,14 +65,14 @@ class sudoku{
                     for (int x=1;x<4;x++){
                          for (int y=1;y<4;y++){
                               if (sudo[i][j]==sudo[((int)((i-1)/3))*3+y][((int)((j-1)/3))*3+x]){
-                                   print("Fail");
+                                   cout<<"Fail";
                                    return 0;
                               }
                          }
                     }
                }
           }
-          print("Success");
+          cout<<"Success";
           return 1;
      }
 
