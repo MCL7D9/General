@@ -3,10 +3,9 @@
 #include <ctime>
 #include <string>
 using namespace std;
-typedef short int si;
 
 
-inline int rando(bool except[9],si upLim=9){
+inline int rando(bool except[9]={1},int upLim=9){
 	unsigned int seed=time(NULL);int rann;
 	srand(seed);
 	rann=rand()%upLim;
@@ -19,7 +18,7 @@ inline int rando(bool except[9],si upLim=9){
 class sudoku{
 
       private:
-          si sudo[9][9], si record[81]={0},top=0;
+          int sudo[9][9], record[81]={0},top=0;
       public:
       		
     	void printLs(){
@@ -76,7 +75,7 @@ class sudoku{
           return 1;
      }
 
-     bool input(bool a;si x,si y,si z){
+     bool input(bool a,int x,int y,int z){
           char *x0,*y0;string temp;
           x0=itoa(x);y0=itoa(y)
           if (a==1&&sudo[x][y]==0){
@@ -108,7 +107,7 @@ class sudoku{
 };
 
 int main(int argc, char *argv[]){
-    sudoku game;si diff;string inp;
+    sudoku game;int diff;string inp;
     cout<<"Welcome to sudoku!";
     game.genPuzzle();
     while ()

@@ -12,7 +12,7 @@
                "args": [],
                "stopAtEntry": false,
                "cwd": "${fileDirname}",
-               "environment": [],
+               "environment": ["C:\\Applications\\msys\\1.0\\bin"],
                "console": "externalTerminal",
                "preLaunchTask": "C/C++: cl.exe build active file"
           }
