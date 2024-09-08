@@ -21,7 +21,6 @@ while (True):
           continue
      else:
           print('Forth requirement checked...')
-          break
      if str.isalpha(pw)==True:
           print('The password needs letters!')
           continue
@@ -32,6 +31,7 @@ while (True):
                symbol=True
      if (symbol==False):
           continue
+     break
 while (True):
      pw2=input('Please input your password again: ')
      if pw!=pw2:
