@@ -31,6 +31,7 @@ while (True):
                symbol=True
      if (symbol==False):
           continue
+while (True):
      pw2=input('Please input your password again: ')
      if pw!=pw2:
           print('Mismatch with your password!')
