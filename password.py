@@ -37,4 +37,5 @@ while (True):
           continue
      else:
           print('Password set successfully!')
+          break
     
